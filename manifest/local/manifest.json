@@ -1,22 +1,22 @@
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
-  "manifestVersion": "1.9",
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.8",
   "version": "1.0.0",
-  "id": "{appid}",
+  "id": "3909bdd0-d4ab-4fe0-ae4a-273021f22abc",
   "packageName": "com.microsoft.teams.extension",
   "developer": {
     "name": "Teams App, Inc.",
-    "websiteUrl": "{baseUrl}",
-    "privacyUrl": "{baseUrl}/privacy",
-    "termsOfUseUrl": "{baseUrl}/termsofuse"
+    "websiteUrl": "https://localhost:3000",
+    "privacyUrl": "https://localhost:3000/privacy",
+    "termsOfUseUrl": "https://localhost:3000/termsofuse"
   },
   "icons": {
     "color": "color.png",
     "outline": "outline.png"
   },
   "name": {
-    "short": "Meeting App",
-    "full": "Meeting App"
+    "short": "borusan_poll_ext",
+    "full": "Borusan Meeting App"
   },
   "description": {
     "short": "Short description for Meeting App.",
@@ -25,39 +25,24 @@
   "accentColor": "#FFFFFF",
   "configurableTabs": [
     {
-      "configurationUrl": "{baseUrl}/config",
+      "configurationUrl": "https://localhost:3000/config",
       "canUpdateConfiguration": false,
-      "scopes": [
-        "groupchat"
-      ],
-      "context": [
-        "meetingChatTab",
-        "meetingDetailsTab",
-        "meetingSidePanel"
-      ]
+      "scopes": ["groupchat"],
+      "context": ["meetingChatTab", "meetingDetailsTab", "meetingSidePanel"]
     }
   ],
   "bots": [
     {
-      "botId": "{appid}",
-      "scopes": [
-        "personal",
-        "groupchat",
-        "team"
-      ],
+      "botId": "3909bdd0-d4ab-4fe0-ae4a-273021f22abc",
+      "scopes": ["personal", "groupchat", "team"],
       "supportsFiles": false,
       "isNotificationOnly": false
     }
   ],
-  "permissions": [
-    "identity",
-    "messageTeamMembers"
-  ],
-  "validDomains": [
-    "{baseUrlDomain}"
-  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["c0386dcc3745.ngrok.io"],
   "webApplicationInfo": {
-    "id": "{appid}",
-    "resource": "{applicationIDURI}"
+    "id": "3909bdd0-d4ab-4fe0-ae4a-273021f22abc",
+    "resource": "api://f631****.ngrok.io/3909bdd0-d4ab-4fe0-ae4a-273021f22abc"
   }
 }
